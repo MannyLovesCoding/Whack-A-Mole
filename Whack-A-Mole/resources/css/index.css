@@ -212,3 +212,11 @@ body {
 #game-end-container .restart-btn {
     cursor: pointer;
 }
+
+.play-button {
+  cursor: pointer;
+}
+
+.options-button {
+  cursor: pointer;
+}
