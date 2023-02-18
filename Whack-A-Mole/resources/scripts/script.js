@@ -7,14 +7,22 @@ if (window.localStorage.streak && document.getElementById('index-streak')) {
 
 // Effects 
 let fullScreenActive = false;
-function mouseDownEffect(buttonNumber) {
+function mouseDownEffect(buttonNumber, restart) {
+    if (restart) {
+        document.getElementsByClassName('restart-btn')[0].style.marginTop = '10px';
+        return;
+    }
     let targetElement = document.getElementsByClassName('game-button')[buttonNumber] || document.getElementById('fullscreen-button');
     console.log('Mouse Down Effect');
     buttonNumber == 2 ? targetElement = document.getElementById('back-button') : targetElement = targetElement;
     targetElement.style.marginTop = '10px';
 }
 
-function mouseUpEffect(buttonNumber) {
+function mouseUpEffect(buttonNumber, restart) {
+    if (restart) {
+        document.getElementsByClassName('restart-btn')[0].style.marginTop = '10px';
+        return;
+    }
     let targetElement = document.getElementsByClassName('game-button')[buttonNumber] || document.getElementById('fullscreen-button');
     console.log('Mouse Up Effect');
     buttonNumber == 2 ? targetElement = document.getElementById('back-button') : targetElement = targetElement;
