@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto-bold';
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    overflow: hidden; /* Change to hidden */
+}
+
+.index-container {
+    text-align: center;
+    background-image: url('../imgs/background.png');
+    height: 100%;
+}
+
+.options-button {
+    position: absolute;
+    left: 5px;
+}
+
+.player-stats {
+    font-size: 40px;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+
+.options-menu {
+    text-align: left !important;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    visibility: hidden;
+}
+
+.options-menu button {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #964b00;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.options-menu button:active {
+    background-color: #6b3e2e;
+}
+
+.options-menu button:hover {
+    opacity: 0.95;
+}
+
+
+
+.game-container {
+    background-image: url('../imgs/grass.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player-stats-img {
+    height: 55px;
+}
+
+.player-stats-text {    
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    bottom: 23px;
+    color: #F0B441;
+    -webkit-text-stroke: 2px black;
+}
+
+.player-stats-container div {
+    background-color: #371403;
+    border: 5px solid #F0B441;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
+.player-stats-container div img {
+    position: relative;
+}
+
+#player-stats-time {
+    padding: 0 25px;
+}
+
+#player-stats-time p {
+    right: 11px;
+}
+#player-stats-time img {
+    right: 25px;
+    bottom: 3px;
+
+
+}
+
+#player-stats-coin img {
+    right: 10px;
+    bottom: 3px;
+}
+
+#player-stats-hammer p {
+    position: relative;
+    left: 38px;
+}
+
+#back-button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#fullscreen-button {
+    position: absolute;
+    right: 320px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#gameStartingContainer {
+    position: relative;
+    font-size: 35px;
+    width: fit-content;
+    bottom: 400px;
+    margin: auto auto;
+}
+
+#gameStartingContainer h1 {
+    text-align: center;
+    color: #F0B441;
+    -webkit-text-stroke: 3px black;
+}
+
+#player-stats-streaks img {
+    position: relative;
+    right: 5px;
+    bottom: 3px;
+}
+
+#player-stats-streaks p {
+    position: relative;
+    left: 21px;
+}
+
+.moles-container {
+    width: 650px;
+    position: absolute;
+    top: 15%;
+    margin: 0 auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    visibility: hidden;
+}
+.dirt {
+    display: inline-block;
+    margin: 15px;
+}
+
+.dirt img {
+    height: 120px;
+    cursor: pointer;
+}
+
+#game-end-container {
+    background-color: #371403;
+    color: white;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: absolute;
+    top: 15%;
+    visibility: hidden;
+}
+
+#game-end-container p {
+    font-size: 25px;
+}
+
+#game-end-container .restart-btn img {
+    height: 120px;
+}
+
+#game-end-container .restart-btn {
+    cursor: pointer;
+}

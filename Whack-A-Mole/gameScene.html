@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" id="game-html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Mole</title>
+    <link rel="icon" href="./resources/imgs/mole.png">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <script src="./resources/scripts/script.js"></script>
+</head>
+<body id="game-container-body">
+    <div class="game-container">
+        <div class="player-stats-container">
+            <div style="margin-top: 0px;" id="player-stats-time">
+                <img class="player-stats-img" src="./resources/imgs/timer.png" alt="Timer">
+                <p class="player-stats-text">00:<span id="time">59</span></p>
+            </div>
+            <div id="player-stats-coin">
+                <img class="player-stats-img" src="./resources/imgs/coin.png" alt="Coin">
+                <p id="coin-stats" class="player-stats-text">0</p>
+            </div>
+            <div id="player-stats-hammer">
+                <img class="player-stats-img" src="./resources/imgs/hammer.png" alt="Hammer">
+                <p id="hammers" class="player-stats-text">0</p>
+            </div>
+            <div id="player-stats-streaks">
+                <img  class="player-stats-img" src="./resources/imgs/fireball.png" alt="Fireball">
+                <p id="streak" class="player-stats-text">0</p>
+            </div>
+        </div>
+        <div onclick="setFullScreen()" onmousedown="mouseDownEffect(0)" onmouseup="mouseUpEffect(0)" id="fullscreen-button">
+            <img src="./resources/imgs/fullscreen-icon.png" alt="Fullscreen">
+        </div>
+        <div onclick="returnToIndex()" id="back-button" onmousedown="mouseDownEffect(2)" onmouseup="mouseUpEffect(2)">
+            <img src="./resources/imgs/back-button.png" alt="Back">
+        </div>
+    </div>
+    <div id="gameStartingContainer">
+        <h1>Game Starting In</h1>
+        <h1 id="gameStartTime">5</h1>
+    </div>
+    <div class="moles-container">
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+        <div class="dirt">
+            <img src="./resources/imgs/hiding-mole.png" alt="Mole">
+        </div>
+    </div>
+    <div id="game-end-container">
+        <h1>Game Ended</h1>
+        <h2 id="game-end-message">Message Here</h2>
+        <p>Coins:<span id="game-end-coins">0</span></p>
+        <p>Hammers:<span id="game-end-hammers">0</span></p>
+        <p id="game-end-streak">Streak:0</p> <!-- if new streak show New BEST STREAK-->
+        <div onclick="location.reload()" class="restart-btn">
+            <img src="./resources/imgs/restart-button.png" alt="Restart Button">
+        </div>
+    </div>
+    <script src="./resources/scripts/gameScript.js"></script>
+    <script src="./resources/scripts/gameTimerScript.js"></script>
+</body>
+</html>

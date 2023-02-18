@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Mole</title>
+    <link rel="icon" href="./resources/imgs/mole.png">
+    <link rel="stylesheet" href="./resources/css/index.css">
+</head>
+<body>
+    <div class="index-container">
+        <div onclick="showSettings()" onmousedown="mouseDownEffect(0)" onmouseup="mouseUpEffect(0)" class="game-button options-button">
+            <img src="./resources/imgs/options-button.png" alt="Options Button">
+        </div>
+        <h2 class="player-stats">Coins: <span id="index-coins">0</span></h2>
+        <h2 class="player-stats">Best Streak: <span id="index-streak">0</span></h2>
+        <div id="game-title">
+            <img src="./resources/imgs/game-text.png" alt="Game Title">
+        </div>
+        <div onclick="playGame()" onmousedown="mouseDownEffect(1)" onmouseup="mouseUpEffect(1)" class="game-button play-button">
+            <img src="./resources/imgs/play-button.png" alt="Play Button">
+        </div>
+        <div style="visibility: hidden;" class="options-menu">
+            <button onclick="setFullScreen()">Fullscreen</button>
+            <button onclick="window.localStorage.clear(); alert('Game data has been reset!')">Reset Game Data</button>
+        </div>
+    </div>
+    <script src="./resources/scripts/script.js"></script>
+</body>
+</html>
