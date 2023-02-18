@@ -20,7 +20,7 @@ function mouseDownEffect(buttonNumber, restart) {
 
 function mouseUpEffect(buttonNumber, restart) {
     if (restart) {
-        document.getElementsByClassName('restart-btn')[0].style.marginTop = '10px';
+        document.getElementsByClassName('restart-btn')[0].style.marginTop = '0';
         return;
     }
     let targetElement = document.getElementsByClassName('game-button')[buttonNumber] || document.getElementById('fullscreen-button');
